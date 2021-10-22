@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Pizza</title>
+    <style>
+        body{
+            background-color: rgb(143, 68, 68);
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+        }
+      table {margin: auto; padding: 1em;}
+    </style>
+</head>
+
+<body>
+<center>
+    <h1 style="text-align: center;">Black Goose Bistro │ Pizza-on-Demand</h1>
+    <h3 style="text-align: center;">Pizza are available for delivery , build your custon pizza and we'll deliver it within a hour. </h3>
+    <h3>Your information</h3>
+    <form method="post" action="pesanan_pizza.html">
+      
+        
+    <td style="text-align: right;"><label for="name">Name : </label></td><td><input type="text" name="name" id="name" required /></td><hr width="220">
+    <td style="text-align: right;"><label for="tel">Telp : </label></td><td><input type="tel" name="tel" id="tel" required /></td><hr width="200">
+    <td style="text-align: right;"><label for="addr">Address : </label></td><td><input type="text" name="addr" id="addr" required /></td><hr width="250">
+    <td style="text-align: right;"><label for="mail">Email : </label></td><td><input type="email" name="mail" id="mail" required /></td><hr width="220">
+</center>        
+        
+          
+      </table>
+
+      <p style="text-align: center;">* Design Your Dream Pizza</p>
+
+      <table>
+        <tr>
+          <td>
+            <h3>Topping</h3>
+            <label><input type=checkbox name=topping/> Red Sauce</label><br/>
+            <label><input type=checkbox name=topping/> White Sauce</label><br/>
+            <label><input type=checkbox name=topping/> Mozzarella Cheese</label><br/>
+            <label><input type=checkbox name=topping/> Pepperoni</label><br/>
+            <label><input type=checkbox name=topping/> Mushrooms</label><br/>
+            <label><input type=checkbox name=topping/> Peppers</label><br/>
+            <label><input type=checkbox name=topping/> Anchovies</label><br/>
+          </td>
+        
+          <td>
+            <h3>Extras</h3>
+            <label><input type=checkbox name=extra/> Sausage</label><br/>
+            <label><input type=checkbox name=extra/> Double Cheese</label><br/>
+            <label><input type=checkbox name=extra/> Extra Hot</label><br/>
+            <label><input type=checkbox name=extra/> Chicken Bacon </label><br/>
+          </td>
+          <tr>
+          <td>
+            <h3>Size</h3>
+            <label><input type=checkbox name=size/> Reguler</label><br/>
+            <label><input type=checkbox name=size/> Large</label><br/>
+          </td>
+        </tr>
+        </tr>
+      </table>
+
+      <center>
+        <tr>
+            <td style="text-align: right;"><label for="instr">How Many Pizza : </label></td>
+            <td><input type="number" id="number" name="number" max="6"><br><br></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><label for="instr">Delivery instructions : </label></td>
+          <td><textarea name="instr" id="instr" maxlength=1000></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;"><br /><button>Submit order</button></td>
+        </tr>
+    </center>
+    </form>
+
+  </body>
+</html>
