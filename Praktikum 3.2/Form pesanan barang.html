@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(27, 26, 24);
+            color: darkgray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #foto{
+            width: 20em;
+            
+        }
+        ##table,th,td{
+            width: 100%;
+            word-spacing: 20%;
+        }
+        a{color: blanchedalmond;}
+    </style>
+</head>
+<center>
+<body>
+    <Div style="display: flex; justify-content: space-around; border: 1px solid rgb(0, 0, 0) ; margin: 20px 70px 5px;">
+        <a href="link">Home</a>
+        <a href="link">Generate link</a>
+        <a href="link">Transaction history</a>
+        <a href="link">policy</a>
+        <a href="link">logout</a>
+    </Div>
+    <table cellspacing="20">
+        <tr>
+            <td style="vertical-align: top;" rowspan="10">
+                <img id="foto" src="img/gitar.jpg" alt="">
+                <input style="display: block;" type="file"> 
+            </td>
+            <td>
+                Title here
+            </td>
+
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Description :
+            </td>
+            <td>
+                <textarea name="deskripsi" id="" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Account Number
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bank :
+            </td>
+            <td>
+                <select>
+                    <option value="BCA">Mandiri</option>
+                    <option value="BRI">BRI</option>
+                    <option value="BCA">BCA</option>
+                </select>
+            </td>
+        <tr>
+            <td>
+                Account Holder
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;"> 
+                Transaction
+            </td>
+            <td>
+                <input type="number">
+                <small style="display: block;">*if transaction is for 3 person, choose 3 from the drop-down list</small>
+                <input style="display: ;" type="checkbox"> Send to mobile phone <br>
+                <input type="checkbox"> Send to email
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Send to mobile phone
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Send to email
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input value="Generate nabr link" type="submit">
+            </td>
+        </tr>
+    </table>
+</body>
+</center>
+</html>
