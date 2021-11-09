@@ -1,0 +1,49 @@
+body
+{
+background-color: rgb(15, 27, 27);
+color: ghostwhite;
+}
+#div1
+{
+display: inline; 
+float : left; 
+margin-left :50px; 
+margin-top:20px;
+}
+#div2
+{
+display: inline; 
+float:left; 
+margin-left:50px; 
+font-size : 17px;
+}
+#div3
+{
+display: inline; 
+float:right; 
+margin-right:50px; 
+font-size: 17px; 
+text-align:right;
+}
+#div4
+{
+font-size: 17px;
+}
+#div5
+{
+    float: left; 
+    margin-left:50px;
+}
+#div6
+{
+    margin-right: 3%;
+}
+article
+{
+    float: left; margin-left:50px;
+}
+fieldset
+{
+    float: right; 
+    margin-right:10px;
+}

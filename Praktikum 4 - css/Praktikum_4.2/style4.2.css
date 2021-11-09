@@ -1,0 +1,29 @@
+body
+    {
+        background-color: rgb(22, 49, 22);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        color: cornsilk;
+    }
+#cp
+    {
+        font-size: medium;
+    }
+.D123
+    {
+        margin-left: 1px;
+    }
+.tr12
+    {
+        text-align: center;
+    }
+#summary
+    {
+        background-color: rgb(29, 66, 32); 
+        padding: 20px 60px;
+    }
+#last
+    {
+        background-color:#133116; 
+        display: flex;
+    }
