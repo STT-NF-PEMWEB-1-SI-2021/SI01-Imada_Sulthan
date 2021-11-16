@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(117, 94, 0);
+}
+
+.box1atas {
+    background-color: rgb(224, 201, 191);
+    border: 1px solid rgb(255, 255, 255);
+    float: left;
+    margin-right: 15px;
+    width: 15%;
+    height: 80px;
+}
+
+.box2atas {
+    background-color: rgb(94, 86, 83);
+    border: 2px solid rgb(255, 255, 255);
+    float: left;
+    width: 80%;
+    height: 80px;
+}
+
+.box1tengah {
+    background-color: rgb(42, 44, 42);
+    border: 2px solid rgb(255, 255, 255);
+    float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 15%;
+    height: 500px;    
+}
+
+.box2tengah {
+    background-color: rgb(4, 5, 5);
+    border: 2px solid rgb(255, 255, 255);
+    float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 66%;
+    height: 500px; 
+}
+
+.box3tengah {
+    background-color: rgb(158, 163, 165);
+    border: 2px solid rgb(255, 255, 255);
+    float: left;
+    margin-top: 20px;
+    width: 15%;
+    height: 500px; 
+}
+
+.boxbawah {
+    background-color: rgb(76, 77, 80);
+    border: 2px solid rgb(255, 255, 255);
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    height: 60px; 
+}

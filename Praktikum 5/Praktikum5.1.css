@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(153, 151, 145);
+}
+
+.kotakpertama{
+    background-color: rgb(5, 129, 26);
+    width: 250px;
+    height: 600px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    float: left;
+    margin: 11px;
+    margin-left: 60px;
+}
+.kotak2 {
+    background-color: rgb(255, 17, 0);
+    width: 250px;
+    height: 600px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    float: left;
+    margin: 11px;
+    }
+
+.kotak3 {
+    background-color: rgb(29, 17, 189);
+    width: 250px;
+    height: 600px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    float: left;
+    margin: 11px;
+    }
+.kotak4 {
+    background-color: rgb(238, 255, 2);
+    width: 250px;
+    height: 600px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    float: left;
+    margin: 11px;
+    }
