@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum6.3 imada</title>
+
+    <style>
+        body {
+            padding: 55px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: rgb(255, 51, 0);
+            line-height: 50px;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: rgb(250, 92, 0);
+            line-height: 50px;
+            padding: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(32, 32, 32);
+            padding: 30px;
+        }
+
+        .flex-container>div {
+            color: rgb(0, 0, 0);
+            margin: 10px;
+            text-align: start;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            height: 500px;
+        }
+
+        .content>div {
+            margin: 10px;
+
+        }
+
+        .box1 {
+            flex: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 81, 0);
+            ;
+        }
+
+        .box2 {
+            flex: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: rgb(139, 4, 4);
+        }
+
+        .item2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .item2>div {
+            width: 30%;
+            margin-top: 50px;
+            line-height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="header">ATAS</div>
+        <div class="content">
+            <div class="box1">SAMPING</div>
+
+            <div class="box2" style="text-align: center;">
+
+                <div class="item1">ARTIKEL</div>
+
+                <div class="item2">
+                    <div><Img src="./gambar1.jfif"></Img></div>
+                    <div><img src="./gambar2.jfif" alt=""></div>
+                    <div><Img src="./gambar3.jfif"></Img></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">BAWAH</div>
+    </div>
+</body>
+
+</html>
