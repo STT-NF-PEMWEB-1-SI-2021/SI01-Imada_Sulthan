@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator kurs imada</title>
+    <style>
+
+fieldset{
+    width: 95%;
+    justify-items: center;
+    background-color: #64fd50;
+    border: 2px solid #2e382e;
+}
+form{
+    padding: 2em 5em;
+    margin-left: 20%;
+}
+td{
+    border: 2px solid #000
+}
+input{
+    width: 350px;
+}
+.text{
+    text-align: center;
+    padding: 10px;
+    
+}
+    </style>
+    <script>
+        function kurs_mata_uang() {
+            let input_rp = document.form.nilai_rp.value;
+            let konvers = document.form.uangasing.value;
+            let hasil = 0;
+
+            if (konvers == "dolarUS") {
+                hasil = input_rp * 9915;
+            } else if (konvers == "dolarSingapura") {
+                hasil = input_rp * 13472;
+            } else if (konvers == "ringgitMalay") {
+                hasil = input_rp * 874;
+            } else if (konvers == "yenJapan") {
+                hasil = input_rp * 120;
+            } else if (konvers == "euro") {
+                hasil = input_rp * 15888;
+            } else if (konvers == "riyalArab") {
+                hasil = input_rp * 3592;
+            } else {
+                hasil = 0;
+            }
+
+            document.form.kurs.value = eval(hasil);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>
+                <h2> Kurs Rupiah - Mata Uang Asing </h2>
+            </legend>
+            <form name="form">
+                <table>
+                    <tr>
+                        <td class="texts">Masukkan Nilai</td>
+                        <td class="texts">Mata Uang</td>
+                        <td class="texts">Nilai Rupiah</td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="nilai_rp"></td>
+                        <td>
+                            <select name="uangasing" onchange="kurs_mata_uang()" id="select">
+                                <option value="dolarUS">Dollar US</option>
+                                <option value="dolarSingapura">Dollar Singapur</option>
+                                <option value="ringgitMalay">Ringgit</option>
+                                <option value="yenJapan">Yen</option>
+                                <option value="euro">Euro</option>
+                                <option value="riyalArab">Riyal</option>
+                            </select>
+                        </td>
+                        <td><input type=" " name="kurs"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

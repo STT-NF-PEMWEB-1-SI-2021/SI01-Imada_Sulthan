@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apkchat imada</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        #send {
+            position: absolute;
+            border: double;
+            height: 99%;
+            width: 99%;
+        }
+        #Pesan {
+            border: 7px solid;
+            position: absolute;
+            bottom: 10px;
+            height: 5%;
+            width: 98%;
+        }
+
+        #teks {
+            width: 75%;
+        }
+        #kirim{
+            border: 2px solid;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="send">
+        <div id="isi" onsubmit="kirim()">
+            <div id="lr"></div>
+            <form id="Pesan">
+                <input type="text" id="teks">
+                <button id="kirim">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let kirimPesan = document.getElementById("Pesan");
+        let pesan = document.getElementById("lr");
+        let chat = document.getElementById("teks");
+        function handleForm(event){
+            event.preventDefault();
+        }
+        kirimPesan.addEventListener('submit', handleForm);
+
+        function kirim(){
+            pesan.innerHTML += "<br>" + chat.value + "<br>";
+            kirimPesan.reset()
+        }
+    </script>
+</body>
+</html> 
