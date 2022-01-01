@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>form Validasi</title>
+    <style>
+        body{
+            background-color: rgb(173, 179, 177);
+        }
+        span{
+            visibility: hidden;
+            color: rgb(10, 7, 7);
+        }
+
+        button{
+            background-color: rgb(132, 132, 138);
+            color: rgb(0, 0, 0);
+            
+        }
+        table{
+            justify-content: center;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <h1>Form Validation</h1>
+    <div>
+    <table>
+        <tr>
+            <td>Nama pelanggan</td>
+            <td>: <input type="text" id="nama" placeholder="Masukkan Nama"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="pen" class="text-danger">*Nama wajib diisi</span></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>: <input type="email" id="email" placeholder="Masukkan Email Aktif"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>*Email wajib diisi</span></td>
+        </tr>
+        <tr>
+            <td>Jam keberangkatan</td>
+            <td>: <input type="time" id="waktu"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>*Jam Keberankatan wajib diisi</span></td>
+        </tr>
+        <tr>
+            <td>Tujuan keberangkatan</td>
+            <td>: <input type="text" id="tujuan" placeholder="Masukkan Tujuan Anda"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>*Wajib Isi Tujuan Keberangkatan</span></td>
+        </tr>
+        <tr>
+            <td>Jumlah Tiket</td>
+            <td>: <input type="number" id="jumlah" placeholder="Jumlah Tiket" min="1" max="10 "></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>*Masukkan jumlah tiket</span></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="valid();">Submit</button>
+    <br>
+    <br>
+    </div>
+
+    <div>
+        <p id="pertama"></p>
+        <p id="kedua"></p>
+        <p id="ketiga"></p>
+        <p id="keempat"></p>
+        <p id="kelima"></p>
+    </div>
+
+    <script>
+        let nama = document.getElementById("nama");
+        let email = document.getElementById("email");
+        let jam = document.getElementById("waktu");
+        let tujuan = document.getElementById("tujuan");
+        let jumlah_tiket = document.getElementById("jumlah");
+        let span = document.getElementsByTagName("span");
+        
+        function valid(){
+        if(nama.value == "" || nama.value.length >= 30){
+            span[0].style.visibility = "visible"
+        }else{
+            console.log(nama.value);
+        }
+        if(email.value == ""){
+            span[1].style.visibility = "visible"
+        }else{
+            console.log(email.value); 
+        }
+        if(jam.value == ""){
+            span[2].style.visibility = "visible"
+        }else{
+            console.log(jam.value);
+        }
+        if(tujuan.value == ""){
+            span[3].style.visibility = "visible"
+        }else{
+            console.log(tujuan.value);  
+        }
+        if(jumlah_tiket.value == ""){
+            span[4].style.visibility = "visible"
+        }else{
+            console.log(jumlah_tiket.value);
+            document.getElementById("pertama").innerHTML = "Nama Pelanggan : " + nama.value;
+            document.getElementById("kedua").innerHTML = "Email : " + email.value;
+            document.getElementById("ketiga").innerHTML = "Jam : " + jam.value;
+            document.getElementById("keempat").innerHTML = "Tujuan : " + tujuan.value;
+            document.getElementById("kelima").innerHTML = "Jumlah Tiket : " + jumlah_tiket.value;
+        }
+    } 
+    </script>
+</body>
+</center>
+</html>

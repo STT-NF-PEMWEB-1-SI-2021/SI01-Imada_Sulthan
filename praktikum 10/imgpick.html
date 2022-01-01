@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: auto;
+        }
+        img {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <label for="hewan">Pilihlah Hewan: </label>
+                    <select id="hewan" onclick="cetak_gambar()">
+                        <option value="hamster">Hamster</option>
+                        <option value="pinguin">Pinguin</option>
+                        <option value="kucing">Kucing</option>
+                        <option value="rubah">gajah</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    <br>
+        <div id="img" style="margin: auto;">
+            <img src="" id="gambar">
+        </div>
+    </div>
+    <script>
+        function cetak_gambar() {
+            const hewan = document.getElementById("hewan");
+            const gambar = document.getElementById("gambar");
+            const img = document.getElementById("img");
+
+
+            if (hewan.value === "hamster"){
+                    gambar.src = "https://media.istockphoto.com/photos/cute-little-hamster-with-sunglasses-picture-id471229049?k=20&m=471229049&s=170667a&w=0&h=s8CUOmqYeKU4qsMs196BwnvqoJeRrd9Ku3qyyuFh56Q="
+                }
+
+            if (hewan.value === "pinguin"){
+                    gambar.src = "https://images-cdn.9gag.com/photo/ao1YwmA_700b.jpg"
+                }
+            
+            if (hewan.value === "kucing"){
+                    gambar.src = "https://cdns.klimg.com/merdeka.com/i/w/news/2021/02/11/1273540/content_images/670x335/20210211121131-1-anak-kucing-001-rizqi-adnamazida.jpg"
+                }
+            
+            if (hewan.value === "gajah"){
+                    gambar.src = "https://asiatoday.id/wp-content/uploads/2019/07/PicsArt_07-20-04.54.30-511x375.jpg"
+                }
+        }
+    </script>
+</body>
+</html>
